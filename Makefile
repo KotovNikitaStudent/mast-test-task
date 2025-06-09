@@ -15,15 +15,15 @@ else
     VENV_ACTIVATE = . venv/bin/activate
     VENV_DEACTIVATE = deactivate
     RM = rm -rf
-    DIST_EXT =
+    DIST_EXT = main
     BIN_PATH = bin
 endif
 
 CLIENT_DIR = client
 SERVER_DIR = server
 VENV_DIR = venv
-CLIENT_BIN = dist/main$(DIST_EXT)
-SERVER_BIN = dist/main$(DIST_EXT)
+CLIENT_BIN = dist/$(DIST_EXT)
+SERVER_BIN = dist/main/$(DIST_EXT)
 TEST_FLAGS = -sv
 
 .PHONY: help install-deps migrate-rollout migrate-rollback \
