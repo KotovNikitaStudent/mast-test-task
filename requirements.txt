@@ -1,0 +1,15 @@
+fastapi==0.115.0
+uvicorn==0.30.6
+sqlalchemy==2.0.31
+pydantic==2.9.2
+pydantic_settings==2.0.0
+PySide6==6.7.2
+requests==2.32.3
+pyinstaller==6.14.1
+# tests
+pytest==8.4.0
+pytest-qt==4.4.0
+httpx==0.28.1
+# linters
+black==25.1.0
+ruff==0.11.13
